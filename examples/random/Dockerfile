@@ -1,9 +1,3 @@
-# This Dockerfile builds an image for a client_golang example.
-#
-# Use as (from the root for the client_golang repository):
-#    docker build -f examples/$name/Dockerfile -t prometheus/golang-example-$name .
-
-# Builder image, where we build the example.
 FROM golang:1.9.0
 WORKDIR /go/src/github.com/prometheus/client_golang
 COPY . .
